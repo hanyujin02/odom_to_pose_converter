@@ -1,0 +1,4 @@
+<launch>
+    <node name="odom_to_pose_converter_node" pkg="odom_to_pose_converter" type="odom_to_pose_converter_node" output="screen">
+    </node>
+</launch>

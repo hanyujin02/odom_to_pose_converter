@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   geometry_msgs
 )
+find_package(Eigen3)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -148,6 +149,7 @@ add_executable(${PROJECT_NAME}_node src/main.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES}
+  Eigen3::Eigen
 )
 
 #############
